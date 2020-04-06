@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+<link  rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2><%= review.title %></h2></div>
+        <div class="panel-body">
+            <div id="image-main">
+                <img src="<%= review.image%>">
+            </div>
+            <p><%= review.created.toDateString() %></p>
+            <p><%= review.body %></p>
+            <a href="/reviews/<%= review._id %>/edit" class="btn btn-primary">Update</a>
+            <form id="delete" action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

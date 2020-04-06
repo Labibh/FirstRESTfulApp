@@ -1,0 +1,21 @@
+.container {
+    width: 65%;
+    /*border: 3px solid darkgrey;*/
+    /*border-radius: 11px;*/
+    padding: 20px;
+}
+
+#image-main {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#delete {
+    display: inline;
+}
